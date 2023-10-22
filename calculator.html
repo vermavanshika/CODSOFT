@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // // 1-9..
+    // var i = 0;
+    // while(i<10){
+    //     document.write(i,"<br>");
+    //     i++;
+    // }
+    
+    
+    // odd or even number
+    function evenorodd(){
+        var  num = document.getElementById("number").value;
+        if (num % 2 == 0) 
+        {
+            alert(num + " is Even");
+            document.getElementById("result").innerHTML =  "Result: " + num + " is Even";
+        }
+        else 
+        {
+            alert(num + " is odd");
+            document.getElementById("result").innerHTML =  "Result: " + num + " is odd";
+        }
+    }
+    // add two numbers
+    function add(){
+        var a = +prompt("Enter first number");
+        var b = +prompt("Enter second number");
+        var c = a + b;
+        document.getElementById("result").innerHTML = "Result: " + c + "<br>" ;
+    }
+    function divideBy(){
+        var a = +prompt("Enter first number");
+        var b = +prompt("Enter second number");
+        var c = a / b;
+        document.getElementById("result").innerHTML = "Result: " + c + "<br>" ;
+    }    
+    function Substraction(){
+        var a = +prompt("Enter first number");
+        var b = +prompt("Enter second number");
+        var c = a - b;
+        document.getElementById("result").innerHTML = "Result: " + c + "<br>" ;
+    }
+        function Multiplication(){
+        var a = +prompt("Enter first number");
+        var b = +prompt("Enter second number");
+        var c = a * b;
+        document.getElementById("result").innerHTML = "Result: " + c + "<br>" ;
+    }
+
+</script>
+
+    <center>
+        <div style="background-color: gray;     margin: 7px 533px;
+        padding: 121px 12px;">
+            <span style="font-size: 30px;"> Calculator: </span> <br>
+            <br><br><input type="text"  value="" id="number" size="30"><br><br>
+            <p id="result"></p>
+            <input type="button" value="Even/Odd" onclick="evenorodd()" id="butt6">
+            <input type="button" value="Add" onclick="add()" id="butt7">
+            <input type="button" value="Division" onclick="divideBy()" id="butt8"> <br><br>
+            <input type="button" value="Substraction" onclick="Substraction()" id="butt9">
+            <input type="button" value="Multiplication" onclick="Multiplication()" id="butt10">
+        </div>
+    
+    </center>
+
+</body>
+</html>
